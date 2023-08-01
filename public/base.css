@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  @layer base {
+    .text-link {
+      @apply font-sans text-base font-medium leading-6 text-white opacity-[0.6000000238418579];
+    }
+  }
+}
