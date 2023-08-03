@@ -30,6 +30,6 @@
   }
 }
 
-/* #header-swiper .swiper-slide {
-  width: auto;
-} */
+#header-swiper .swiper-slide {
+  width: fit-content;
+}

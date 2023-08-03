@@ -1,7 +1,6 @@
 import * as React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 import Navbar from "../Navbar";
 import Button from "../Button";
@@ -34,6 +33,10 @@ const Header = () => {
       ],
     },
   };
+
+  const companies = data.clientsSection.clients.map((item, i) => (
+    <img src={item.img} alt={item.alt} className="pointer-events-none ml-auto" />
+  ));
 
   return (
     <header className="bg-darkBlue min-h-screen flex flex-col">
@@ -71,40 +74,33 @@ const Header = () => {
             {data.clientsSection.paragraph}
           </p>
         </div>
-        <div>
-          <Swiper
-            id="header-swiper"
-            slidesPerView={1}
-            modules={[Autoplay]}
-            // breakpoints={{
-            //   640: {
-            //     slidesPerView: 2,
-            //     spaceBetween: 8,
-            //   },
-            //   768: {
-            //     slidesPerView: "auto",
-            //     spaceBetween: 16,
-            //   },
-            //   1400: {
-            //     slidesPerView: 5,
-            //     spaceBetween: 32,
-            //   }
-            //  }}
-            loop={true}
-            //  autoplay={{
-            //    delay: 2500,
-            //  }}
-          >
-            {data.clientsSection.clients.map((item, i) => (
-              <SwiperSlide key={i}>
-                <img
-                  src={item.img}
-                  alt={item.alt}
-                  className="pointer-events-none"
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <div className="w-[calc(min(100vw,1312px)_-_17px_-_170px_-_64px)]">
+          <AliceCarousel
+            items={companies}
+            disableDotsControls
+            disableButtonsControls
+            autoPlay
+            autoPlayInterval={2500}
+            infinite
+            mouseTracking
+            responsive={{
+              0: {
+                items: 1,
+              },
+              568: {
+                items: 2,
+              },
+              768: {
+                items:3
+              },
+              1024: {
+                items: 4,
+              },
+              1280: {
+                items: 5,
+              },
+            }}
+          />
         </div>
       </div>
     </header>
