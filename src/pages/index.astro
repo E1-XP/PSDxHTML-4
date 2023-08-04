@@ -1,12 +1,13 @@
 ---
-import Header from "./../components/sections/Header";
 import Layout from "../layouts/Layout.astro";
+import Header from "./../components/sections/Header";
+import Footer from "../components/sections/Footer";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
     <Header client:load/>
-    <h1>Welcome to <span class="text-gradient">Gatsby</span></h1>
+    <Footer/>
   </main>
 </Layout>
 

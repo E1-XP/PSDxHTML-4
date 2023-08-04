@@ -36,7 +36,7 @@ const Navbar = () => {
             {menuItems.map((item, i) => (
               <li
                 key={item.linkText}
-                className="text-link last-of-type:opacity-100 last-of-type:text-sandy group transition hover:opacity-100"
+                className="text-link text-white opacity-60 last-of-type:opacity-100 last-of-type:text-sandy group transition hover:opacity-100"
               >
                 <a
                   href={item.route}

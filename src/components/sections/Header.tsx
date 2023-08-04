@@ -35,7 +35,11 @@ const Header = () => {
   };
 
   const companies = data.clientsSection.clients.map((item, i) => (
-    <img src={item.img} alt={item.alt} className="pointer-events-none ml-auto" />
+    <img
+      src={item.img}
+      alt={item.alt}
+      className="pointer-events-none ml-auto"
+    />
   ));
 
   return (
@@ -69,8 +73,10 @@ const Header = () => {
       </div>
       <div className="flex wrapper mt-auto gap-8 max-md:mt-8">
         <div className="flex flex-col justify-center">
-          <p className="paragraph-small">{data.clientsSection.heading}</p>
-          <p className="paragraph-large whitespace-nowrap">
+          <p className="paragraph-small text-white opacity-60">
+            {data.clientsSection.heading}
+          </p>
+          <p className="paragraph-large text-white whitespace-nowrap">
             {data.clientsSection.paragraph}
           </p>
         </div>
@@ -91,7 +97,7 @@ const Header = () => {
                 items: 2,
               },
               768: {
-                items:3
+                items: 3,
               },
               1024: {
                 items: 4,

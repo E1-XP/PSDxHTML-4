@@ -12,24 +12,36 @@
       @apply text-white font-sans text-[56px] font-semibold leading-[68px];
     }
 
+    .heading-2 {
+      @apply font-sans text-5xl font-semibold leading-[58px] text-darkBlue;
+    }
+
+    .heading-4 {
+      @apply text-darkBlue font-sans text-2xl font-semibold leading-9;
+    }
+
+    .heading-6 {
+      @apply text-darkBlue font-sans text-base font-semibold leading-7;
+    }
+
     .paragraph {
-      @apply text-white font-sans text-base font-normal leading-6 opacity-[0.6000000238418579];
+      @apply text-white font-sans text-base font-normal leading-6 opacity-60;
     }
 
     .paragraph-small {
-      @apply font-sans text-white text-sm font-medium leading-5 opacity-[0.6000000238418579];
+      @apply font-sans text-darkBlue text-sm font-medium leading-5;
     }
 
     .paragraph-large {
-      @apply font-sans text-white text-lg font-medium leading-7;
+      @apply font-sans text-darkBlue text-lg font-medium leading-7;
     }
 
     .text-link {
-      @apply font-sans text-base font-medium leading-6 text-white opacity-[0.6000000238418579];
+      @apply font-sans text-base font-medium leading-6 text-darkBlue;
+    }
+
+    .label-med {
+      @apply font-sans text-base font-medium leading-6 text-black;
     }
   }
-}
-
-#header-swiper .swiper-slide {
-  width: fit-content;
 }
