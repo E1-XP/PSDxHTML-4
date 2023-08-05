@@ -2,13 +2,14 @@ import * as React from "react";
 import { twMerge } from "tailwind-merge";
 
 type Direction = "horizontal" | "vertical";
-
+type Variant = 0 | 1;
 interface Props {
   className?: string;
   direction: Direction;
+  variant?: Variant;
 }
 
-const DecorationLine = ({ className, direction }: Props) => {
+const DecorationLine = ({ className, direction, variant = 0 }: Props) => {
   return (
     <div
       className={twMerge(
@@ -17,9 +18,11 @@ const DecorationLine = ({ className, direction }: Props) => {
         className
       )}
     >
-      <div className="bg-orange basis-1/3"></div>
+      {variant === 0 && <div className="bg-orange basis-1/3"></div>}
       <div className="bg-sandy basis-1/3"></div>
-      <div className="bg-blue basis-1/3"></div>
+      <div
+        className={variant === 0 ? "basis-1/3 bg-blue" : "basis-2/3 bg-blueAlt"}
+      ></div>
     </div>
   );
 };

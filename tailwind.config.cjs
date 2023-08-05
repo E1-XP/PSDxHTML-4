@@ -12,9 +12,11 @@ module.exports = {
       colors: {
         white: "#FFFFFF",
         sandy: "#FFD3AF",
+        sandyAlt: "#FFE6D2",
         orange: "#FFA155",
         lightBlue: "#ECF8F9",
         blue: "#444CFC",
+        blueAlt: "#666DFF",
         darkBlue: "#232536",
       },
     },

@@ -40,7 +40,7 @@
       @apply font-sans text-base font-medium leading-6 text-darkBlue;
     }
 
-    .label-med {
+    .label-medium {
       @apply font-sans text-base font-medium leading-6 text-black;
     }
   }
