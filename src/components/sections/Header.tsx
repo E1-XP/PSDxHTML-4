@@ -1,5 +1,6 @@
-import * as React from "react";
 import AliceCarousel from "react-alice-carousel";
+const Carousel = AliceCarousel.default ? AliceCarousel.default : AliceCarousel;
+
 import "react-alice-carousel/lib/alice-carousel.css";
 
 import Navbar from "../Navbar";
@@ -81,7 +82,7 @@ const Header = () => {
           </p>
         </div>
         <div className="w-[calc(min(100vw,1312px)_-_17px_-_170px_-_64px)]">
-          <AliceCarousel
+          <Carousel
             items={companies}
             disableDotsControls
             disableButtonsControls

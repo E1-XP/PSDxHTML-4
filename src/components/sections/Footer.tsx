@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-around max-lg:basis-full sm:flex-row gap-12 md:gap-[60px] mt-12 md:mt-20 max-lg:order-1 lg:mx-auto xl:pl-28">
           {data.columns.map((column, colIdx) => (
-            <div>
+            <div key={colIdx}>
               {column.heading && (
                 <p className="heading-6 mb-3 max-sm:text-center">
                   {column.heading}
