@@ -2,7 +2,7 @@ import * as React from "react";
 import { twMerge } from "tailwind-merge";
 
 type Direction = "horizontal" | "vertical";
-type Variant = 0 | 1;
+type Variant = 0 | 1 | 2;
 interface Props {
   className?: string;
   direction: Direction;
@@ -10,6 +10,34 @@ interface Props {
 }
 
 const DecorationLine = ({ className, direction, variant = 0 }: Props) => {
+  const getBlocks = () => {
+    if (variant === 0)
+      return (
+        <>
+          <div className="bg-orange basis-1/3"></div>
+          <div className="bg-sandy basis-1/3"></div>
+          <div className="basis-1/3 bg-blue"></div>
+        </>
+      );
+
+    if (variant === 1)
+      return (
+        <>
+          <div className="bg-sandy basis-1/3"></div>
+          <div className="basis-2/3 bg-blueAlt"></div>
+        </>
+      );
+
+    if (variant === 2)
+      return (
+        <>
+          <div className="basis-1/5 bg-blue"></div>
+          <div className="bg-sandy basis-3/5"></div>
+          <div className="bg-orange basis-1/5"></div>
+        </>
+      );
+  };
+
   return (
     <div
       className={twMerge(
@@ -18,11 +46,7 @@ const DecorationLine = ({ className, direction, variant = 0 }: Props) => {
         className
       )}
     >
-      {variant === 0 && <div className="bg-orange basis-1/3"></div>}
-      <div className="bg-sandy basis-1/3"></div>
-      <div
-        className={variant === 0 ? "basis-1/3 bg-blue" : "basis-2/3 bg-blueAlt"}
-      ></div>
+      {getBlocks()}
     </div>
   );
 };

@@ -49,11 +49,13 @@ const Header = () => {
       <div className="flex wrapper gap-8 md:gap-12 lg:gap-[93px] xl:pt-16 mt-auto flex-col md:flex-row">
         <div className="md:pt-[56px] flex flex-col gap-6 items-start basis-[48.8%]">
           <div className="bg-white opacity-[0.06] w-6 h-6"></div>
-          <h2 className="heading max-lg:text-4xl">{data.heading}</h2>
-          <p className="paragraph max-w-[528px]">{data.paragraph}</p>
+          <h2 className="lg:heading heading-3 text-white">{data.heading}</h2>
+          <p className="paragraph text-white opacity-60 max-w-[528px]">
+            {data.paragraph}
+          </p>
           <Button className="flex items-center justify-center gap-4 mt-2">
             {data.buttonText}
-            <ArrowRightIcon />
+            <ArrowRightIcon className="stroke-white" />
           </Button>
         </div>
         <div className="flex items-center max-md:-order-1 h-max self-center max-md:mt-4">

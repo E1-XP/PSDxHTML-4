@@ -44,7 +44,7 @@ const Navbar = () => {
                 >
                   {item.linkText}
                   {i === menuItems.length - 1 && (
-                    <ArrowRightIcon className="transition group-hover:translate-x-1" />
+                    <ArrowRightIcon className="stroke-white transition group-hover:translate-x-1" />
                   )}
                 </a>
               </li>

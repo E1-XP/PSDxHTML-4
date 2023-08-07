@@ -16,6 +16,10 @@
       @apply font-sans text-5xl font-semibold leading-[58px] text-darkBlue;
     }
 
+    .heading-3 {
+      @apply text-darkBlue font-sans text-4xl font-semibold leading-[54px];
+    }
+
     .heading-4 {
       @apply text-darkBlue font-sans text-2xl font-semibold leading-9;
     }
@@ -25,7 +29,7 @@
     }
 
     .paragraph {
-      @apply text-white font-sans text-base font-normal leading-6 opacity-60;
+      @apply text-grey font-sans text-base font-normal leading-6;
     }
 
     .paragraph-small {
@@ -42,6 +46,10 @@
 
     .label-medium {
       @apply font-sans text-base font-medium leading-6 text-black;
+    }
+
+    .caption {
+      @apply font-sans text-sm font-medium leading-5 tracking-[3px] uppercase;
     }
   }
 }
