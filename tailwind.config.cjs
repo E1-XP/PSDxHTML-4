@@ -20,6 +20,7 @@ module.exports = {
         darkBlue: "#232536",
         grey: "#5D5F6D",
       },
+      boxShadow: { card: "0px 60px 68px -30px rgba(255, 161, 85, 0.35)" },
     },
   },
   plugins: [],

@@ -1,9 +1,9 @@
 import * as React from "react";
+import DecorationLine from "../DecorationLine";
 
 import shuttle from "./../../images/shuttle 1.svg";
 import settings from "./../../images/settings 1.svg";
 import support from "./../../images/support 1.svg";
-import DecorationLine from "../DecorationLine";
 
 const OurExpertise = () => {
   const data = {
