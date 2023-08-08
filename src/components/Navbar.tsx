@@ -18,8 +18,12 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <nav className="border-b border-white border-opacity-5 text-white w-full">
-      <div className="flex items-center justify-between wrapper h-20">
+    <nav className="border-b border-white border-opacity-5 text-white w-full z-40">
+      <div
+        className={`flex items-center justify-between wrapper h-20 bg-darkBlue w-full ${
+          isMenuOpen ? "fixed" : ""
+        }`}
+      >
         <a href="/">
           <h1>
             <img src={logo} alt="Finsweet" className="pointer-events-none" />
@@ -57,6 +61,7 @@ const Navbar = () => {
           className="flex lg:hidden z-50"
         />
       </div>
+      <div className={isMenuOpen ? "h-20" : ""} />
     </nav>
   );
 };
