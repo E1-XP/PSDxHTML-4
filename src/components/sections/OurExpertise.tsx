@@ -40,7 +40,7 @@ const OurExpertise = () => {
   return (
     <section className="bg-lightBlue py-[96px]">
       <div className="wrapper flex flex-col lg:flex-row justify-between max-lg:gap-16">
-        <div className="basis-[48.6%]">
+        <div className="basis-[48.6%] max-w-[622px]">
           <h2 className="caption">{data.tagText}</h2>
           <h3 className="heading-3 md:heading-2 mt-4">{data.heading}</h3>
           <p className="paragraph mt-6">{data.paragraph}</p>

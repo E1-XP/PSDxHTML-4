@@ -39,11 +39,11 @@ const AboutUs = () => {
 
   return (
     <section className="wrapper mt-[90px] md:mt-[120px] mb-[64px] md:mb-[98px] flex flex-wrap justify-between gap-y-12">
-      <div className="lg:basis-1/2 flex flex-col gap-4">
+      <div className="lg:basis-1/2 flex flex-col gap-4 max-w-[640px]">
         <h2 className="caption">{data.tagText}</h2>
         <h3 className="heading-3 md:heading-2">{data.heading}</h3>
       </div>
-      <div className="lg:basis-[43%] flex flex-col gap-4">
+      <div className="lg:basis-[43%] flex flex-col gap-4 max-w-[640px] md:-mt-12 lg:mt-0">
         <p className="heading-3 max-md:text-[28px] md:mt-[43px]">
           {data.subHeading}
         </p>

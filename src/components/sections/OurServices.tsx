@@ -55,10 +55,10 @@ const OurServices = () => {
           {data.buttonText}
           <ArrowRightIcon className="stroke-white" />
         </Button>
-        <ul className="mt-20 flex flex-col lg:flex-row gap-8 md:w-4/5 md:mx-auto lg:w-auto">
+        <ul className="mt-20 flex flex-col lg:flex-row gap-8 md:w-[85%] md:mx-auto lg:w-auto">
           {data.features.map((item) => (
             <li key={item.heading}>
-              <div className="flex flex-col bg-white p-8 pb-7 sm:p-12 sm:pb-11 transition hover:shadow-card">
+              <div className="flex flex-col bg-white p-8 pb-7 sm:p-12 sm:pb-11 transition hover:shadow-card group">
                 <div className="w-[47px] h-[47px] bg-sandyAlt flex items-center justify-center rounded-full shrink-0">
                   <img src={item.img} alt={item.imgAlt} />
                 </div>
@@ -67,7 +67,7 @@ const OurServices = () => {
                   <p className="paragraph text-grey mt-2">{item.paragraph}</p>
                   <a
                     href={item.url}
-                    className="text-blue flex gap-3 items-center mt-6 group"
+                    className="text-blue flex gap-3 items-center mt-6"
                   >
                     {item.linkText}
                     <ArrowRightIcon className="transition group-hover:translate-x-1" />
