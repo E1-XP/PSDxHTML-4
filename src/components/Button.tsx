@@ -1,7 +1,7 @@
 import * as React from "react";
 import { twMerge } from "tailwind-merge";
 
-import Shape from "./../images/Shapes.svg";
+import shape from "./../images/Shapes.svg";
 
 interface Props {
   className?: string;
@@ -21,7 +21,7 @@ const Button = ({
     onClick={onClick}
   >
     <img
-      src={Shape}
+      src={shape}
       alt="shape decoration"
       className="absolute top-0 left-0 pointer-events-none"
     />

@@ -8,7 +8,7 @@ import LinkedInIcon from "../icons/LinkedIn";
 import ArrowRightIcon from "../icons/ArrowRight";
 
 import Logo from "./../../images/Logo black.svg";
-import Shape from "./../../images/Shapes.svg";
+import shape from "./../../images/Shapes.svg";
 
 const Footer = () => {
   const data = {
@@ -66,7 +66,7 @@ const Footer = () => {
       <div className="bg-white wrapper flex flex-wrap flex-col sm:flex-row justify-between relative w-full">
         <div className="flex flex-col max-md:items-center [&>img]:mr-auto max-lg:w-full">
           <img
-            src={Shape}
+            src={shape}
             alt="Decoration shapes"
             className="pointer-events-none h-[34px] w-[37px]"
           />
