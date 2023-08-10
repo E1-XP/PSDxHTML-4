@@ -6,6 +6,7 @@ import AboutUs from "../components/sections/AboutUs";
 import OurExpertise from "./../components/sections/OurExpertise";
 import OurServices from "../components/sections/OurServices";
 import OurProcess from "../components/sections/OurProcess";
+import Reviews from "../components/sections/Reviews";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -16,6 +17,7 @@ import OurProcess from "../components/sections/OurProcess";
       <OurExpertise />
       <OurServices />
       <OurProcess />
+      <Reviews client:load />
     </main>
     <Footer />
   </main>

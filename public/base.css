@@ -48,8 +48,19 @@
       @apply font-sans text-base font-medium leading-6 text-black;
     }
 
+    .label-small {
+      @apply font-sans text-xs font-medium leading-4;
+    }
+
     .caption {
       @apply font-sans text-sm font-medium leading-5 tracking-[3px] uppercase;
     }
   }
+}
+
+#quotes .alice-carousel__dots {
+  display: flex;
+  justify-content: center;
+  column-gap: 18.5px;
+  margin-top: 24px;
 }
