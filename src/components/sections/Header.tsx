@@ -26,11 +26,11 @@ const Header = () => {
       heading: "Our Clients",
       paragraph: "We've Worked with",
       clients: [
-        { img: logo, alt: "Logo" },
-        { img: logo2, alt: "Logo2" },
-        { img: logo3, alt: "Logo3" },
-        { img: logo4, alt: "Logo4" },
-        { img: logo5, alt: "Logo5" },
+        { img: logo, alt: "Company logo" },
+        { img: logo2, alt: "Company logo" },
+        { img: logo3, alt: "Company logo" },
+        { img: logo4, alt: "Company logo" },
+        { img: logo5, alt: "Company logo" },
       ],
     },
   };

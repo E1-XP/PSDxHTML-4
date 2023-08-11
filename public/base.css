@@ -64,3 +64,12 @@
   column-gap: 18.5px;
   margin-top: 24px;
 }
+
+#quotes .alice-carousel__stage {
+  display: flex;
+}
+
+#quotes .alice-carousel__stage-item {
+  flex: 1 0 auto;
+  height: auto;
+}

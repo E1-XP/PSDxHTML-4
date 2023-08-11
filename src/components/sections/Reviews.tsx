@@ -33,7 +33,7 @@ const Reviews = () => {
   };
 
   const Quotes = data.quotes.map((item) => (
-    <div className="flex flex-col md:flex-row bg-white">
+    <div className="flex flex-col md:flex-row bg-white max-w-full h-auto">
       <DecorationLine
         direction="vertical"
         className="hidden md:flex h-auto w-[16.5px]"
@@ -94,17 +94,16 @@ const Reviews = () => {
             ))}
           </div>
           <p className="label-small flex items-center -mt-[2px]">
-            <span className="label-medium">{data.bottomText}</span>
+            <span className="label-medium mt-[2px]">{data.bottomText}</span>
             {data.bottomText2}
           </p>
         </div>
         <div
-          className="lg:basis-1/2 max-w-[320px] sm:max-w-[540px] md:max-w-[768px] lg:max-w-[500px] xl:max-w-[624px] max-lg:self-center relative"
+          className="lg:basis-1/2 w-11/12 sm:w-[540px] md:w-[720px] lg:w-[500px] xl:w-[624px] max-lg:self-center relative h-auto"
           id="quotes"
         >
           <AliceCarousel
             items={Quotes}
-            autoWidth
             disableButtonsControls
             autoPlay
             autoPlayInterval={3500}
