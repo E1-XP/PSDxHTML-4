@@ -1,5 +1,6 @@
 import * as React from "react";
 import AliceCarousel from "react-alice-carousel";
+const Carousel = AliceCarousel.default ? AliceCarousel.default : AliceCarousel;
 
 import logo from "./../../images/Logo 2.svg";
 import quote from "./../../images/Quote.svg";
@@ -102,7 +103,7 @@ const Reviews = () => {
           className="lg:basis-1/2 w-11/12 sm:w-[540px] md:w-[720px] lg:w-[500px] xl:w-[624px] max-lg:self-center relative h-auto"
           id="quotes"
         >
-          <AliceCarousel
+          <Carousel
             items={Quotes}
             disableButtonsControls
             autoPlay
