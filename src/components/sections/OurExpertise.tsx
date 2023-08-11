@@ -38,7 +38,7 @@ const OurExpertise = () => {
   };
 
   return (
-    <section className="bg-lightBlue py-[96px]">
+    <section className="bg-whiteBlue py-[96px]">
       <div className="wrapper flex flex-col lg:flex-row justify-between max-lg:gap-16">
         <div className="basis-[48.6%] max-w-[622px]">
           <h2 className="caption">{data.tagText}</h2>
