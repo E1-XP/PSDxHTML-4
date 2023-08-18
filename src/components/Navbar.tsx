@@ -30,17 +30,17 @@ const Navbar = () => {
           </h1>
         </a>
         <div
-          className={`items-center fixed lg:static flex max-lg:w-full transition gap-10 lg:gap-0 bg-darkBlue flex-col lg:flex-row top-20 left-0 h-full lg:h-auto pt-[15vh] lg:pt-0 lg:justify-normal z-40 ${
+          className={`items-center fixed lg:static flex max-lg:w-full transition gap-10 lg:gap-0 bg-darkBlue flex-col lg:flex-row top-20 left-0 h-full lg:h-auto pt-[10vh] lg:pt-0 lg:justify-normal z-40 ${
             isMenuOpen
               ? "opacity-100"
               : "opacity-0 pointer-events-none lg:pointer-events-auto lg:opacity-100"
           }`}
         >
-          <ul className="flex flex-col lg:flex-row gap-8">
+          <ul className="flex flex-col lg:flex-row gap-10 lg:gap-8">
             {menuItems.map((item, i) => (
               <li
                 key={item.linkText}
-                className="text-link text-white opacity-60 last-of-type:opacity-100 last-of-type:text-sandy group transition hover:opacity-100"
+                className="text-link text-white max-lg:text-xl opacity-60 last-of-type:opacity-100 last-of-type:text-sandy group transition hover:opacity-100"
               >
                 <a
                   href={item.route}
