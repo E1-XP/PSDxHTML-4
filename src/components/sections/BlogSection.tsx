@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import img from "./../../images/Image (2).png";
-import img2 from "./../../images/Image (1).png";
+import img from "./../../images/image (2).webp";
+import img2 from "./../../images/image (1).webp";
 import ArrowRightIcon from "../icons/ArrowRight";
 
 const BlogSection = () => {

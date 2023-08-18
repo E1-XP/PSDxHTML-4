@@ -9,7 +9,7 @@ import DecorationLine from "../DecorationLine";
 
 import ArrowRightIcon from "../icons/ArrowRight";
 
-import headerImg from "./../../images/Image.png";
+import headerImg from "./../../images/image.webp";
 import logo from "./../../images/Logo (0).svg";
 import logo2 from "./../../images/Logo (1).svg";
 import logo3 from "./../../images/Logo (2).svg";

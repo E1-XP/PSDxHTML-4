@@ -2,9 +2,9 @@ import * as React from "react";
 import DecorationLine from "../DecorationLine";
 import ArrowRightIcon from "../icons/ArrowRight";
 
-import img from "./../../images/Image 1.png";
-import img2 from "./../../images/Image 2.png";
-import img3 from "./../../images/Image 3.png";
+import img from "./../../images/image 1.webp";
+import img2 from "./../../images/image 2.webp";
+import img3 from "./../../images/image 3.webp";
 
 const AboutUs = () => {
   const data = {
