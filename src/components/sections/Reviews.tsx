@@ -78,7 +78,7 @@ const Reviews = () => {
   return (
     <section className="pt-[102px] pb-[96px] bg-whitePurple">
       <div className="wrapper flex justify-between flex-col lg:flex-row max-lg:gap-24">
-        <div className="basis-[38.45%] max-w-[492px] flex flex-col gap-4">
+        <div className="basis-[38.45%] max-w-[691px] flex flex-col gap-4">
           <div className="bg-blueAlt w-4 h-4" />
           <h2 className="sr-only">{data.tagText}</h2>
           <h3 className="heading-3 md:heading-2">{data.heading}</h3>
