@@ -30,7 +30,7 @@ const Newsletter = () => {
         direction="vertical"
         className="hidden md:flex h-auto ml-auto w-6"
       />
-      <DecorationLine direction="horizontal" className="lg:hidden h-6" />
+      <DecorationLine direction="horizontal" className="lg:hidden h-3" />
     </section>
   );
 };

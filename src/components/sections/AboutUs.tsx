@@ -65,11 +65,13 @@ const AboutUs = () => {
               <>
                 <DecorationLine
                   direction="vertical"
-                  className="hidden md:flex w-[18px]"
+                  className="hidden md:flex md:w-[18px]"
+                  variant={3}
                 />
                 <DecorationLine
                   direction="horizontal"
                   className="md:hidden w-full"
+                  variant={3}
                 />
               </>
             )}

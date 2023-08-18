@@ -41,7 +41,7 @@ const Reviews = () => {
       />
       <DecorationLine
         direction="horizontal"
-        className="md:hidden h-[16.5px] order-1"
+        className="md:hidden h-[8px] order-1"
       />
       <div className="flex flex-col pt-8 md:pt-12 pl-4 md:pl-10 p-7 md:p-[42px]">
         <p className="heading-4 opacity-[0.87] md:pr-[27px]">{item.text}</p>

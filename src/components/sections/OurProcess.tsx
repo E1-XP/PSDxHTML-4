@@ -102,6 +102,7 @@ const OurProcess = () => {
             {[0, arr.length - 1].includes(i) && (
               <DecorationLine
                 direction="horizontal"
+                variant={3}
                 className={arr.length - 1 === i ? "-order-1" : ""}
               />
             )}

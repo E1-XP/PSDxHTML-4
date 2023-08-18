@@ -61,16 +61,16 @@ const Header = () => {
         <div className="flex items-center max-md:-order-1 h-max self-center max-md:mt-4">
           <DecorationLine
             direction="vertical"
-            className="h-[103px] w-4 self-end"
+            className="h-[103px] max-h-[17vw] w-2 md:w-4 self-end"
           />
           <img
             src={headerImg}
             alt="Office workers discussing new ideas"
-            className="pointer-events-none w-[calc(100%_-_40px)]"
+            className="pointer-events-none w-[calc(100%_-_20px)] md:w-[calc(100%_-_40px)]"
           />
           <DecorationLine
             direction="vertical"
-            className="h-[322px] w-6 self-start"
+            className="h-[322px] max-h-[66vw] w-3 md:w-6 self-start"
           />
         </div>
       </div>
