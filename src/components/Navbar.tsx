@@ -16,6 +16,7 @@ const Navbar = () => {
   ];
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [activeMenuItem, setActiveMenuItem] = React.useState(0);
 
   return (
     <nav className="border-b border-white border-opacity-5 text-white w-full z-40">
@@ -40,7 +41,9 @@ const Navbar = () => {
             {menuItems.map((item, i) => (
               <li
                 key={item.linkText}
-                className="text-link text-white max-lg:text-xl opacity-60 last-of-type:opacity-100 last-of-type:text-sandy group transition hover:opacity-100"
+                className={`text-link text-white max-lg:text-xl ${
+                  activeMenuItem === i ? "opacity-100" : "opacity-60"
+                } last-of-type:opacity-100 last-of-type:text-sandy group transition hover:opacity-100`}
               >
                 <a
                   href={item.route}
