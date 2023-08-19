@@ -18,6 +18,7 @@ https://www.figma.com/file/Q8cAgPQTiaeOvvvKJgtM4e/Client-First-Template-3-(Commu
 
 - Typescript
 - Astro.js
+- React.js
 - Tailwind CSS
 
 ## Installation
